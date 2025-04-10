@@ -1,0 +1,1 @@
+python -W ignore src/celeba/train_celeba_partial.py --tasks 5 11 21 24 27 32 34 39 --cluster_label fgsm_cluster8 --store_models

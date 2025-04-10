@@ -1,0 +1,3 @@
+python -W ignore src/celeba/topk_celeba.py --image_save_dir /data/mariammaa/celeba/perturbed_test_manipulate_set2/ --attack manipulate --evaluate_subset
+
+#python -W ignore src/celeba/manipulate_eval_celeba.py --sal_method saliency_map --attack manipulate --image_save_dir /data/mariammaa/celeba/perturbed_test_manipulate_set2/ --tasks 0_1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28_29_30_31_32_33_34_35_36_37_38_39 --evaluate_subset --output_dir /data/mariammaa/celeba/results_manipulate_saliencymap/

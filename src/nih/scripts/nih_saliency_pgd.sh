@@ -1,0 +1,2 @@
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_pgd/ --results_dir /data/mariammaa/nih_multi_label/nih_results_pgd_saliencymap/
+# python -W ignore src/nih/attack_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_pgd/ --attack pgd --evaluate_subset

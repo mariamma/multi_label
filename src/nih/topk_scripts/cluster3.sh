@@ -1,0 +1,18 @@
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_saliencymap/ --evaluate_subset --sal_method saliency_map --net_basename full_cluster3-0_1_2_3_6_8_9-resnext-lr:0.01-wd:0.0_whole-sea-31 --tasks 0_1_2_3_6_8_9
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_saliencymap/ --evaluate_subset --sal_method saliency_map --net_basename full_cluster3-4_5_7_10_11_12_13-resnext-lr:0.01-wd:0.0_cerulean-dew-33 --tasks 4_5_7_10_11_12_13
+
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_gradcam/ --evaluate_subset --sal_method gradcam --net_basename full_cluster3-0_1_2_3_6_8_9-resnext-lr:0.01-wd:0.0_whole-sea-31 --tasks 0_1_2_3_6_8_9
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_gradcam/ --evaluate_subset --sal_method gradcam --net_basename full_cluster3-4_5_7_10_11_12_13-resnext-lr:0.01-wd:0.0_cerulean-dew-33  --tasks 4_5_7_10_11_12_13
+
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_inputxgradient/ --evaluate_subset --sal_method input_x_gradient --net_basename full_cluster3-0_1_2_3_6_8_9-resnext-lr:0.01-wd:0.0_whole-sea-31 --tasks 0_1_2_3_6_8_9
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_inputxgradient/ --evaluate_subset --sal_method input_x_gradient --net_basename full_cluster3-4_5_7_10_11_12_13-resnext-lr:0.01-wd:0.0_cerulean-dew-33  --tasks 4_5_7_10_11_12_13
+
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_guidedbackprop/ --evaluate_subset --sal_method guidedBackprop --net_basename full_cluster3-0_1_2_3_6_8_9-resnext-lr:0.01-wd:0.0_whole-sea-31 --tasks 0_1_2_3_6_8_9
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_guidedbackprop/ --evaluate_subset --sal_method guidedBackprop --net_basename full_cluster3-4_5_7_10_11_12_13-resnext-lr:0.01-wd:0.0_cerulean-dew-33  --tasks 4_5_7_10_11_12_13
+
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_guidedgradcam/ --evaluate_subset --sal_method guided_gradcam --net_basename full_cluster3-0_1_2_3_6_8_9-resnext-lr:0.01-wd:0.0_whole-sea-31 --tasks 0_1_2_3_6_8_9
+python -W ignore src/nih/multi_eval_nih.py --image_save_dir /data/mariammaa/nih_multi_label/perturbed_nih_topk/ --results_dir /data/mariammaa/nih_multi_label/nih_results_topk_guidedgradcam/ --evaluate_subset --sal_method guided_gradcam --net_basename full_cluster3-4_5_7_10_11_12_13-resnext-lr:0.01-wd:0.0_cerulean-dew-33  --tasks 4_5_7_10_11_12_13
+
+# python -W ignore train_nih_partial.py --tasks 0 1 2 3 6 8 9 --cluster_label cluster3 --model_storage /data/mariammaa/nih_multi_label/checkpoint_nih_topk/ --store_models
+
+# python -W ignore train_nih_partial.py --tasks 4 5 7 10 11 12 13 --cluster_label cluster3 --model_storage /data/mariammaa/nih_multi_label/checkpoint_nih_topk/ --store_models
